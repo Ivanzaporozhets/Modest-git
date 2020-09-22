@@ -18,7 +18,7 @@
   }
   .gallery-holder img{
     height: auto;
-    min-height: 400px;
+    min-height: 260px;
   }
   .nav-wrapper,
   .main-gallery .market-place,
@@ -45,14 +45,10 @@
  .modest-info{
    flex-direction: column;
    text-align: center;
-   width: 80%;
+   width: 90%;
  }
  ul.social{
    justify-content: center;
- }
- ul.advantages{
-   width: 80%;
-   margin: 105px auto 0;
  }
  .market-place{
    align-items: center;
@@ -60,14 +56,27 @@
  }
  ul.slick-dots{
    justify-content: center;
+   bottom: 8px;
  }
+ .market-place p{
+  padding-bottom: 15px;
+  font-size: 12px;
+  width: 100%;
+}
 }
 @media (max-width: 670px) {
   nav.main-nav{
     display: none;
   }
+  .nav-wrapper,
+  .main-gallery, .market-place
+  {
+    padding: 0;
+  }
   .navigation{
     display: block;
+    width: 100%;
+    z-index: 3;
   }
   .nav-wrapper{
     justify-content: center;
@@ -76,8 +85,17 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .nav-wrapper span{
-    margin-right: 20px;
+ 
+  .market-place h1{
+    font-size: 26px;
+    padding-bottom: 15px;
+  }
+  .market-place p{
+    font-size: 10px;
+  }
+  .market-place a {
+    padding: 10px 15px 10px 15px;
+    font-size: 12px;
   }
 }
 @media (max-width: 400px){
@@ -87,12 +105,12 @@
   ul.advantages {
     width: 100%;
   }
-  .market-place p{
-    padding-bottom: 25px;
-  }
-  
   ul.advantages li{
     padding-left: 55px;
+  }
+  .market-place a {
+    padding: 6px 10px ;
+    font-size: 10px;
   }
 }
 @media (max-width: 320px){
@@ -129,8 +147,5 @@
   }
   ul.advantages li:not(:last-child){
     padding-bottom: 80px;
-  }
-  .market-place h1{
-    font-size: 26px;
   }
 }
