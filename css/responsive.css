@@ -1,0 +1,136 @@
+@media (max-width: 1300px) {
+  body,
+  .nav-wrapper,
+  .gallery-holder,
+  .main-gallery, 
+  .market-place,
+  .slick-dots,
+  .slick-slider,
+  .modest-info,
+  .modest-wrapper,
+  .team-wrapper,
+  .team,
+  .main-art,
+  .main-gallery .market-place,
+  ul.advantages {
+    min-width: 320px;
+    width: 100%;
+  }
+  .gallery-holder img{
+    height: auto;
+    min-height: 400px;
+  }
+  .nav-wrapper,
+  .main-gallery .market-place,
+  .modest-info,
+  .slick-dots{
+    padding: 0 15px;
+  }
+  .team-info ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team h2{
+    text-align: center;
+  }
+  .team-info>ul>li{
+    margin: 0 15px 15px 15px ;
+  }
+}
+@media (max-width: 830px) {
+ .nav-wrapper{
+   flex-direction: column;
+   justify-content: space-evenly;
+ }
+ .modest-info{
+   flex-direction: column;
+   text-align: center;
+   width: 80%;
+ }
+ ul.social{
+   justify-content: center;
+ }
+ ul.advantages{
+   width: 80%;
+   margin: 105px auto 0;
+ }
+ .market-place{
+   align-items: center;
+   text-align: center;
+ }
+ ul.slick-dots{
+   justify-content: center;
+ }
+}
+@media (max-width: 670px) {
+  nav.main-nav{
+    display: none;
+  }
+  .navigation{
+    display: block;
+  }
+  .nav-wrapper{
+    justify-content: center;
+  }
+  .nav-wrapper{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .nav-wrapper span{
+    margin-right: 20px;
+  }
+}
+@media (max-width: 400px){
+  .modest-info,
+  .modest-wrapper,
+  .main-art,
+  ul.advantages {
+    width: 100%;
+  }
+  .market-place p{
+    padding-bottom: 25px;
+  }
+  
+  ul.advantages li{
+    padding-left: 55px;
+  }
+}
+@media (max-width: 320px){
+  body,
+  .nav-wrapper,
+  .gallery-holder,
+  .main-gallery, 
+  .market-place,
+  .slick-dots,
+  .slick-slider,
+  .modest-info,
+  .modest-wrapper,
+  .team-wrapper,
+  .team,
+  .main-art,
+  .main-gallery .market-place,
+  ul.advantages {
+    min-width: 280px;
+  }
+  .team h2{
+    padding-left: 5px;
+    margin-left: 15px;
+    text-align: inherit;
+  }
+  .main-art h2{
+    font-size: 30px;
+  }
+  ul.advantages li::before{
+    left: calc(50% - 24px);
+    top: -66px;
+  }
+  ul.advantages li{
+    padding-left: 0;
+  }
+  ul.advantages li:not(:last-child){
+    padding-bottom: 80px;
+  }
+  .market-place h1{
+    font-size: 26px;
+  }
+}
